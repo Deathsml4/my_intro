@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <!-- Kết nối với file CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Phần đầu trang -->
+    <header>
+        <h1>Xin chào! Mình là Nguyễn Văn A</h1>
+        <p>MSV: 1234567 | Lớp: CNTT K59</p>
+    </header>
+
+    <!-- Hình ảnh chân dung -->
+    <section>
+        <img src="assets/myportrait.jpg" alt="Ảnh chân dung của tôi" class="portrait" />
+    </section>
+
+    <!-- Giới thiệu chung -->
+    <section>
+        <h2>Đôi nét về bản thân</h2>
+        <p>
+            Chào mừng bạn đến với trang web giới thiệu bản thân của tôi!
+            Tôi là một sinh viên ngành Công nghệ Thông tin, đam mê lập trình web và
+            yêu thích khám phá những công nghệ mới. Rất vui khi được chia sẻ với các bạn
+            đôi điều về tôi.
+        </p>
+    </section>
+
+    <!-- Danh sách sở thích -->
+    <section>
+        <h2>Sở thích</h2>
+        <ul>
+            <li>Nghe nhạc và chơi guitar</li>
+            <li>Đọc sách (đặc biệt là sách lập trình và khoa học)</li>
+            <li>Chơi thể thao: đá bóng, cầu lông</li>
+            <li>Du lịch và khám phá ẩm thực</li>
+        </ul>
+    </section>
+
+    <!-- Liên kết (text link + image link) -->
+    <section>
+        <h2>Liên kết tham khảo</h2>
+        <p><a href="https://www.github.com/" target="_blank">Link github của tôi</a></p>
+        <p>Hãy ghé thăm <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> để học các kiến thức cơ bản
+            về HTML, CSS, JavaScript!</p>
+
+        <!-- Ảnh liên kết -->
+        <p>
+            <a href="https://www.google.com" target="_blank">
+                <img src="assets/link-image.png" alt="Google" width="100" />
+            </a>
+        </p>
+    </section>
+
+    <!-- Biểu mẫu (Form) -->
+    <section>
+        <h2>Form Góp ý</h2>
+        <form action="https://example.com/submit" method="POST">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Nhúng đa phương tiện (Video, Audio) -->
+    <section>
+        <h2>Video giới thiệu</h2>
+        <!-- Ví dụ nhúng video YouTube -->
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video YouTube"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe> -->
+        <video width="640" height="360" controls>
+            <!-- Nguồn video định dạng MP4 -->
+            <source src="assets/myvideo.mp4" type="video/mp4">
+            <!-- Thêm nguồn video định dạng WebM (nếu có) -->
+            <source src="assets/myvideo.webm" type="video/webm">
+            Trình duyệt của bạn không hỗ trợ phần tử video.
+        </video>
+
+        <h2>Nhạc yêu thích</h2>
+        <!-- Ví dụ nhúng audio (file .mp3 trong folder assets) -->
+        <!-- <audio controls>
+            <source src="https://soundcloud.com/guri-maan-420430528/sets/die-with-a-smile" type="audio/mpeg" />
+            Trình duyệt của bạn không hỗ trợ thẻ audio.
+        </audio> -->
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/guri-maan-420430528/sets/die-with-a-smile&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+    </section>
+
+    <!-- Điều hướng sang trang thứ hai -->
+    <section>
+        <h2>Thông tin khác</h2>
+        <p>Bạn có thể xem thêm một số thông tin khác <a href="about.html">tại đây</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Website cá nhân của Nguyễn Văn A</p>
+    </footer>
+</body>
+
+</html>
